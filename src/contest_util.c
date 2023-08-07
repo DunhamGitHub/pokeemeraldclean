@@ -2526,16 +2526,16 @@ void LoadLinkContestPlayerPalettes(void)
             if (version == VERSION_RUBY || version == VERSION_SAPPHIRE)
             {
                 if (gLinkPlayers[i].gender == MALE)
-                    LoadPalette(gObjectEventPal_RubySapphireBrendan, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
+                    LoadPalette(gObjectEventPal_Player, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
                 else
-                    LoadPalette(gObjectEventPal_RubySapphireMay, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
+                    LoadPalette(gObjectEventPal_Player, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
             }
             else
             {
                 if (gLinkPlayers[i].gender == MALE)
-                    LoadPalette(gObjectEventPal_Brendan, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
+                    LoadPalette(gObjectEventPal_Player, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
                 else
-                    LoadPalette(gObjectEventPal_May, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
+                    LoadPalette(gObjectEventPal_Player, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
             }
         }
     }
