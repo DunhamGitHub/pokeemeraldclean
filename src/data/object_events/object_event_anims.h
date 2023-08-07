@@ -432,6 +432,57 @@ static const union AnimCmd sAnim_FieldMove[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_VSSeeker[] = {
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(1, 4),
+    ANIMCMD_FRAME(5, 4),
+    ANIMCMD_FRAME(6, 4),
+    ANIMCMD_LOOP(0),
+    ANIMCMD_FRAME(7, 4),
+    ANIMCMD_FRAME(8, 4),
+    ANIMCMD_LOOP(6),
+    ANIMCMD_FRAME(6, 4),
+    ANIMCMD_FRAME(1, 4),
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_VSSeekerBike[] = {
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(1, 4),
+    ANIMCMD_FRAME(2, 4),
+    ANIMCMD_FRAME(3, 4),
+    ANIMCMD_LOOP(0),
+    ANIMCMD_FRAME(4, 4),
+    ANIMCMD_FRAME(5, 4),
+    ANIMCMD_LOOP(6),
+    ANIMCMD_FRAME(3, 4),
+    ANIMCMD_FRAME(2, 4),
+    ANIMCMD_FRAME(1, 4),
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_GetOnOffSurfSouth[] = {
+    ANIMCMD_FRAME(9, 32),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd sAnim_GetOnOffSurfNorth[] = {
+    ANIMCMD_FRAME(10, 32),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd sAnim_GetOnOffSurfWest[] = {
+    ANIMCMD_FRAME(11, 32),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd sAnim_GetOnOffSurfEast[] = {
+    ANIMCMD_FRAME(11, 32, .hFlip = TRUE),
+    ANIMCMD_JUMP(0),
+};
+
 static const union AnimCmd sAnim_GetOnOffSurfBlobSouth[] =
 {
     ANIMCMD_FRAME(9, 32),
@@ -809,6 +860,26 @@ static const union AffineAnimCmd sAffineAnim_KyogreGroudon_DipWest[] =
     AFFINEANIMCMD_FRAME(0x0, 0x0, 1, 1),
     AFFINEANIMCMD_LOOP(8),
     AFFINEANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_SurfFaceSouth[] = {
+    ANIMCMD_FRAME(0, 60),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd sAnim_SurfFaceNorth[] = {
+    ANIMCMD_FRAME(1, 60),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd sAnim_SurfFaceWest[] = {
+    ANIMCMD_FRAME(2, 60),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd sAnim_SurfFaceEast[] = {
+    ANIMCMD_FRAME(2, 60, .hFlip = TRUE),
+    ANIMCMD_JUMP(0),
 };
 
 static const union AnimCmd sAnim_HoOhFlapWings[] =
@@ -1295,10 +1366,6 @@ static const struct StepAnimTable sStepAnimTables[] = {
     {
         .anims = sAnimTable_RedGreenFish,
         .animPos = {1, 3, 0, 2},
-    },
-    {
-        .anims = sAnimTable_Unknown,
-        .animPos = {3, 7, 0, 4},
     },
     {
         .anims = sAnimTable_BrendanMayNormal,

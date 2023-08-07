@@ -74,6 +74,25 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedFieldMove = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedFish = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_PLAYER_RED,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_BRIDGE_REFLECTION,
+    .size = 512,
+    .width = 32,
+    .height = 32,
+    .paletteSlot = PALSLOT_PLAYER,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_32x32,
+    .subspriteTables = sOamTables_32x32,
+    .anims = sAnimTable_RedGreenFish,
+    .images = sPicTable_RedFish,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GreenNormal = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_PLAYER_GREEN,
@@ -150,7 +169,24 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GreenFieldMove = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GreenFish = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_PLAYER_GREEN,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_BRIDGE_REFLECTION,
+    .size = 512,
+    .width = 32,
+    .height = 32,
+    .paletteSlot = PALSLOT_PLAYER,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_32x32,
+    .subspriteTables = sOamTables_32x32,
+    .anims = sAnimTable_RedGreenFish,
+    .images = sPicTable_GreenFish,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
 
 
 
@@ -4315,7 +4351,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mom = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LinkBrendan = {
+/*const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LinkBrendan = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_MAY,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_BRIDGE_REFLECTION,
@@ -4351,7 +4387,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LinkMay = {
     .anims = sAnimTable_BrendanMayNormal,
     .images = sPicTable_MayNormal,
     .affineAnims = gDummySpriteAffineAnimTable,
-};
+};*/
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Juan = {
     .tileTag = TAG_NONE,
@@ -4735,7 +4771,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Brandon = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireBrendan = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_RS_BRENDAN,
+    .paletteTag = OBJ_EVENT_PAL_TAG_BRENDAN,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -4754,7 +4790,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireBrenda
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireMay = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_RS_MAY,
+    .paletteTag = OBJ_EVENT_PAL_TAG_MAY,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,

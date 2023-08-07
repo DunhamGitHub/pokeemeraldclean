@@ -449,8 +449,8 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_BIRTH_ISLAND_STONE      0x111F
 #define OBJ_EVENT_PAL_TAG_HO_OH                   0x1120
 #define OBJ_EVENT_PAL_TAG_LUGIA                   0x1121
-#define OBJ_EVENT_PAL_TAG_RS_BRENDAN              0x1122
-#define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1123
+#define OBJ_EVENT_PAL_TAG_BRENDAN              0x1122
+#define OBJ_EVENT_PAL_TAG_MAY                  0x1123
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -495,8 +495,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_BirthIslandStone,      OBJ_EVENT_PAL_TAG_BIRTH_ISLAND_STONE},
     {gObjectEventPal_HoOh,                  OBJ_EVENT_PAL_TAG_HO_OH},
     {gObjectEventPal_Lugia,                 OBJ_EVENT_PAL_TAG_LUGIA},
-    {gObjectEventPal_Player,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
-    {gObjectEventPal_Player,       OBJ_EVENT_PAL_TAG_RS_MAY},
+    {gObjectEventPal_Player,   OBJ_EVENT_PAL_TAG_BRENDAN},
+    {gObjectEventPal_Player,       OBJ_EVENT_PAL_TAG_MAY},
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE}, 
 #else
@@ -859,6 +859,18 @@ static const u8 sRunningDirectionAnimNums[] = {
     [DIR_SOUTHEAST] = ANIM_RUN_SOUTH,
     [DIR_NORTHWEST] = ANIM_RUN_NORTH,
     [DIR_NORTHEAST] = ANIM_RUN_NORTH,
+};
+
+static const u8 sSpinDirectionAnimNums[] = {
+    [DIR_NONE]      = ANIM_SPIN_SOUTH,
+    [DIR_SOUTH]     = ANIM_SPIN_SOUTH,
+    [DIR_NORTH]     = ANIM_SPIN_NORTH,
+    [DIR_WEST]      = ANIM_SPIN_WEST,
+    [DIR_EAST]      = ANIM_SPIN_EAST,
+    [DIR_SOUTHWEST] = ANIM_SPIN_SOUTH,
+    [DIR_SOUTHEAST] = ANIM_SPIN_NORTH,
+    [DIR_NORTHWEST] = ANIM_SPIN_WEST,
+    [DIR_NORTHEAST] = ANIM_SPIN_EAST,
 };
 
 const u8 gTrainerFacingDirectionMovementTypes[] = {
@@ -4524,6 +4536,11 @@ u8 GetAcroWheelieDirectionAnimNum(u8 direction)
 u8 GetAcroUnusedDirectionAnimNum(u8 direction)
 {
     return sAcroUnusedDirectionAnimNums[direction];
+}
+
+u8 GetSpinDirectionAnimNum(u8 direction)
+{
+    return sSpinDirectionAnimNums[direction];
 }
 
 u8 GetAcroEndWheelieDirectionAnimNum(u8 direction)
