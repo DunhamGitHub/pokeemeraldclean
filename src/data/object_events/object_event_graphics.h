@@ -1,3 +1,22 @@
+const u16 gObjectEventPal_Player[] = INCBIN_U16("graphics/object_events/palettes/player.gbapal");
+const u16 gObjectEventPic_RedNormal[] = INCBIN_U16("graphics/object_events/pics/people/_red/red_normal.4bpp");
+const u16 gObjectEventPic_RedSurfRun[] = INCBIN_U16("graphics/object_events/pics/people/_red/red_surf_run.4bpp");
+const u16 gObjectEventPic_GreenNormal[] = INCBIN_U16("graphics/object_events/pics/people/_leaf/green_normal.4bpp");
+const u16 gObjectEventPic_GreenSurfRun[] = INCBIN_U16("graphics/object_events/pics/people/_leaf/green_surf_run.4bpp");
+const u16 gObjectEventPal_PlayerReflection[] = INCBIN_U16("graphics/object_events/palettes/player_reflection.gbapal");
+const u16 gObjectEventPal_BridgeReflection[] = INCBIN_U16("graphics/object_events/palettes/bridge_reflection.gbapal");
+const u16 gObjectEventPic_RedItem[] = INCBIN_U16("graphics/object_events/pics/people/_red/red_item.4bpp");
+const u16 gObjectEventPic_GreenItem[] = INCBIN_U16("graphics/object_events/pics/people/_leaf/green_item.4bpp");
+const u16 gObjectEventPic_RedSurf[] = INCBIN_U16("graphics/object_events/pics/people/_red/red_surf.4bpp");
+const u16 gObjectEventPic_GreenSurf[] = INCBIN_U16("graphics/object_events/pics/people/_leaf/green_surf.4bpp");
+const u16 gObjectEventPic_RedBike[] = INCBIN_U16("graphics/object_events/pics/people/_red/red_bike.4bpp");
+const u16 gObjectEventPic_RedVSSeekerBike[] = INCBIN_U16("graphics/object_events/pics/people/_red/red_vs_seeker_bike.4bpp");
+const u16 gObjectEventPic_GreenBike[] = INCBIN_U16("graphics/object_events/pics/people/_leaf/green_bike.4bpp");
+const u16 gObjectEventPic_GreenVSSeekerBike[] = INCBIN_U16("graphics/object_events/pics/people/_leaf/green_vs_seeker_bike.4bpp");
+const u16 gObjectEventPic_RedFish[] = INCBIN_U16("graphics/object_events/pics/people/_red/red_fish.4bpp");
+const u16 gObjectEventPic_GreenFish[] = INCBIN_U16("graphics/object_events/pics/people/_leaf/green_fish.4bpp");
+
+
 const u32 gObjectEventPic_BrendanNormal[] = INCBIN_U32("graphics/object_events/pics/people/brendan/walking.4bpp");
 const u32 gObjectEventPic_BrendanRunning[] = INCBIN_U32("graphics/object_events/pics/people/brendan/running.4bpp");
 const u16 gObjectEventPal_Brendan[] = INCBIN_U16("graphics/object_events/palettes/brendan.gbapal");
@@ -343,7 +362,7 @@ const u16 gObjectEventPal_MovingBox[] = INCBIN_U16("graphics/object_events/palet
 const u32 gObjectEventPic_Sudowoodo[] = INCBIN_U32("graphics/object_events/pics/pokemon/sudowoodo.4bpp");
 const u32 gObjectEventPic_Mew[] = INCBIN_U32("graphics/object_events/pics/pokemon/mew.4bpp");
 const u16 gObjectEventPal_RedLeaf[] = INCBIN_U16("graphics/object_events/palettes/red_leaf.gbapal");
-const u32 gObjectEventPic_Red[] = INCBIN_U32("graphics/object_events/pics/people/red.4bpp");
+const u32 gObjectEventPic_Red[] = INCBIN_U32("graphics/object_events/pics/people/_red/red.4bpp");
 const u32 gObjectEventPic_Leaf[] = INCBIN_U32("graphics/object_events/pics/people/leaf.4bpp");
 const u16 gObjectEventPal_BirthIslandStone[] = INCBIN_U16("graphics/object_events/palettes/birth_island_stone.gbapal");
 const u32 gObjectEventPic_BirthIslandStone[] = INCBIN_U32("graphics/object_events/pics/misc/birth_island_stone.4bpp");
