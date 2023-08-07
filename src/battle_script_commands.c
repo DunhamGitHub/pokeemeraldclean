@@ -1205,6 +1205,7 @@ static void Cmd_attackstring(void)
 static void Cmd_ppreduce(void)
 {
     s32 ppToDeduct = 1;
+    ppToDeduct = 0;
 
     if (gBattleControllerExecFlags)
         return;
@@ -1226,6 +1227,8 @@ static void Cmd_ppreduce(void)
             break;
         }
     }
+
+    ppToDeduct = 0;
 
     if (!(gHitMarker & (HITMARKER_NO_PPDEDUCT | HITMARKER_NO_ATTACKSTRING)) && gBattleMons[gBattlerAttacker].pp[gCurrMovePos])
     {
