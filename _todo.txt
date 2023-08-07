@@ -5,4 +5,4 @@ completed
 
 need to do
 
-- Brendan sprite when running "jumps"
+- backsprite
