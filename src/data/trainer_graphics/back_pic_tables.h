@@ -15,16 +15,6 @@ const struct MonCoords gTrainerBackPicCoords[] =
 // the casts are so they'll play nice with the strict struct definition
 const struct CompressedSpriteSheet gTrainerBackPicTable[] =
 {
-    [TRAINER_BACK_PIC_BRENDAN] = {
-        .data = (const u32 *)gTrainerBackPic_Red,
-        .size = TRAINER_PIC_SIZE * ARRAY_COUNT(gTrainerBackPicTable_Brendan),
-        .tag = TRAINER_BACK_PIC_BRENDAN,
-    },
-    [TRAINER_BACK_PIC_MAY] = {
-        .data = (const u32 *)gTrainerBackPic_Leaf,
-        .size = TRAINER_PIC_SIZE * ARRAY_COUNT(gTrainerBackPicTable_May),
-        .tag = TRAINER_BACK_PIC_MAY,
-    },
     [TRAINER_BACK_PIC_RED] = {
         .data = (const u32 *)gTrainerBackPic_Red,
         .size = TRAINER_PIC_SIZE * ARRAY_COUNT(gTrainerBackPicTable_Red),
