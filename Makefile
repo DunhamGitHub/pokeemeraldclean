@@ -216,7 +216,7 @@ AUTO_GEN_TARGETS :=
 all: createagb rom
 
 createagb: 
-	cd ../agbcc && ./install.sh ../pokeemerald
+	cd ../agbcc && ./install.sh ../pokeemeraldclean
 
 tools: $(TOOLDIRS)
 
